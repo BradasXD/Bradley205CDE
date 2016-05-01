@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhmtl1-transitional.dtd">
+<html lang = "en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Enter Homepage</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS_Files/styleSheet.css" type="text/css" /> 
+    <script type="text/javascript" src="JS_Files/slideshow.js"></script>
+  </head>
+  <body>
+    <!-- Start of navigation bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="logo">
+            <a class="navbar-brand" href="#">
+              <a href = "../HTML_Files/Homepage.html"><img id="logo" src="../Images/igloologo.png"></a>
+          </div>
+          </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="games_dropdown">Games
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../HTML_Files/Action.html">Action</a>
+                </li>
+                <li>
+                  <a href="../HTML_Files/Adevnture.html">Adventure</a>
+                </li>
+                <li>
+                  <a href="../HTML_Files/Puzzle.html">Puzzle</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../HTML_Files/About.html">About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search"></div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </form>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <!-- End of navigation bar -->
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="col-sm-9">
+          <h1>About</h1>
+          <p>This websaite was designed for my second year unversity project, for the module 205CDE.  I am required t create a functional website which is also responsive to various orientations and screen sizes. The website also needs to contain a well structured database as well as extensive use of Flask. This is my take on the coursework and I sinscerely hope that it has met the required expectations.</p>
+          <div class="col-sm-6">
+            
+          <img class="mySlides" src="../Images/boxo.jpg">
+          <img class="mySlides" src="../Images/Agar.io.jpg">
+          <img class="mySlides" src="../Images/mimelet.jpg">
+          <img class="mySlides" src="../Images/SwingCopters.jpg">
+          <a class="slideShowButtons" onclick="plusDivs(-1)">&#10094;</a>
+          <a class="slideShowButtons"onclick="plusDivs(+1)">&#10095;</a> 
+     </div>
+      <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  </body>
+  
+  
+</html>
