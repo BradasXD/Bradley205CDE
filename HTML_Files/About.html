@@ -73,36 +73,42 @@
     <div class="container-fluid">
       <div class="col-sm-12">
         <div class="col-sm-9">
-          <h1>About</h1>
-          <p>This websaite was designed for my second year unversity project, for the module 205CDE.  I am required t create a functional website which is also responsive to various orientations and screen sizes. The website also needs to contain a well structured database as well as extensive use of Flask. This is my take on the coursework and I sinscerely hope that it has met the required expectations.</p>
+          <h1 class = pageTitle>About</h1>
+          <p id = "aboutDescription">This website was designed for my second year unversity project, for the module 205CDE.  I am required t create a functional website which is also responsive to various orientations and screen sizes. The website also needs to contain a well structured database as well as extensive use of Flask. This is my take on the coursework and I sinscerely hope that it has met the required expectations.</p>
+          <div id = "slideShow">
           <div class="col-sm-6">
-            
-          <img class="mySlides" src="../Images/boxo.jpg">
-          <img class="mySlides" src="../Images/Agar.io.jpg">
-          <img class="mySlides" src="../Images/mimelet.jpg">
-          <img class="mySlides" src="../Images/SwingCopters.jpg">
+          Click on one one if the images to go to their designated games
+          <a href = "../HTML_Files/Boxo.html"><img class="mySlides" src="../Images/boxo.jpg"></a>
+          <a href = "../HTML_Files/Agar.io.html"><img class="mySlides" src="../Images/Agar.io.jpg">
+          <a href = "../HTML_Files/Mimelet.html"> <img class="mySlides" src="../Images/mimelet.jpg"></a>
+          <a href = "../HTML/SwingCopter.html"><img class="mySlides" src="../Images/SwingCopters.jpg"></a>
           <a class="slideShowButtons" onclick="plusDivs(-1)">&#10094;</a>
           <a class="slideShowButtons"onclick="plusDivs(+1)">&#10095;</a> 
-     </div>
+           </div> 
+        </div>
+      </div>
+    </div>
+  </div>
       <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+        var sliderNumber = 1;
+        showDivs(sliderNumber);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+        function plusDivs(n) {
+          showDivs(sliderNumber += n);
+        }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {sliderNumber = 1}    
+            if (n < 1) {sliderNumber = x.length} ;
+              for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+          }
+        x[sliderNumber-1].style.display = "block";  
+        }
 </script>
+  <div class = "container-fluid"></div>
   </body>
   
   
