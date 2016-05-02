@@ -63,7 +63,7 @@ p.opening {
 }
 
 #bs-example-navbar-collapse-1 {
-    position:fixed;
+    
     margin-left: 40px;
     
 }
@@ -166,4 +166,18 @@ p.opening {
 .miniclip-game-embed {
     margin:auto;
     
+}
+
+.pageTitle:hover {
+    color:white;
+    
+}
+
+#slideShow {
+    border:1px black solid;
+}
+
+#aboutDescription {
+    border:solid black 1px;
+    padding: 3px 3px 3px 10px;
 }
