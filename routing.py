@@ -1,33 +1,106 @@
-from flask import Flask, make_response, abort, redirect
+from flask import Flask, make_response, abort, redirect, render_template
 
 app = Flask(__name__);
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
+def index():
+    return render_template("Homepage.html")
     
-@app.route('/users')
-def hello_users():
-    return 'Hello everybody!'
+@app.route('/8BallPool')
+def eightball():
+    return render_template("8BallPoo.html")
     
-@app.route('/users/<username>')
-def hello_me(username):
-    return 'Hello ' + username + '!'
+@app.route('/About')
+def About():
+    return render_template("About.html")
     
-@app.route('/error')
-@app.route('/errors')
-def error():
-    response = make_response('Oops, something goes wrong!', 404)
-    return response
+@app.route('/AcidFactory')
+def AcidFactory():
+    return render_template("AcidFactory.html")
     
-@app.route('/unexpected')
-def unexpected():
-    abort(404)
-    return True
+@app.route('/Action')
+def Action():
+    return render_template("Action.html")
     
-@app.route('/<path:path>')
-def catch_all(path):
-    return redirect('https://www.google.co.uk/search?q=' + path)
+@app.route('/Adventure')
+def Adventure():
+    return render_template("Adventure.html")
+    
+@app.route('/Agar.io')
+def Agar_io():
+    return render_template("Agar.io.html")
+    
+@app.route('/Boxo')
+def Boxo():
+    return render_template("Boxo.html")
+    
+@app.route('/CalabashBros')
+def CalabashBros():
+    return render_template("CalabashBros.html")
+    
+@app.route('/Commando')
+def Commando():
+    return render_template("Commando.html")
+    
+@app.route('/CommandoDefence')
+def CommandoDefence():
+    return render_template("CommandoDefence.html")
+    
+@app.route('/Contact')
+def Contact():
+    return render_template("Contact.html")
+    
+@app.route('/CubeBuster')
+def CubeBuster():
+    return render_template("CubeBuster.html")
+    
+@app.route('/EgyptianTale')
+def EgyptianTale():
+    return render_template("EgyptianTale.html")
 
+@app.route('/Fragger')
+def Fragger():
+    return render_template("Fragger.html")
+
+@app.route('/Mimelet')
+def Mimelet():
+    return render_template("Mimelet.html")
+
+@app.route('/MinecartMadness')
+def MinecartMadness():
+    return render_template("MinecartMadness.html")
+
+@app.route('/Puzzle')
+def Puzzle():
+    return render_template("Puzzle.html")
+
+@app.route('/Shooter')
+def Shooter():
+    return render_template("Shooter.html")
+
+@app.route('/SkywardNinja')
+def SkywardNinja():
+    return render_template("SkywardNinja.html")
+
+@app.route('/StealthSniper')
+def StealthSniper():
+    return render_template("StealthSniper.html")
+
+@app.route('/SushiGoRound')
+def SushiGoRound():
+    return render_template("SushiGoRound.html")
+
+@app.route('/SwingCopter')
+def SwingCopter():
+    return render_template("SwingCopter.html")
+
+@app.route('/TotalWreckage')
+def TotalWreckage():
+    return render_template("TotalWreckage.html")
+    
+@app.route('/Zombality')
+def Zombality():
+    return render_template("Zombality.html")
+    
 if __name__ == '__main__':
     app.run(port=8080, host='0.0.0.0', debug=True)

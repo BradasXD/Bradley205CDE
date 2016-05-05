@@ -11,7 +11,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="JS_Files/slideshow.js"></script>
-    <link rel="stylesheet" href="../CSS_Files/styleSheet.css" type="text/css" />
+    <link rel="stylesheet" href="../static/CSS_Files/styleSheet.css" type="text/css" />
   </head>
   <body>
     <!-- Start of navigation bar -->
@@ -27,73 +27,62 @@
           </button>
           <div id="logo">
             <a class="navbar-brand" href="#">
-              <a href = "../HTML_Files/Homepage.html"><img id="logo" src="../Images/igloologo.png"></a>
-            </div>
+            <a href = "../HTML_Files/Homepage.html"><img id="logo" src="../static/Images/igloologo.png"></a>
           </div>
         </div>
+      </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="games_dropdown">Games
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="../HTML_Files/Action.html">Action</a>
-                </li>
-                <li>
-                  <a href=>Adventure</a>
-                </li>
-                <li>
-                  <a href="#">Arcade</a>
-                </li>
-                <li>
-                  <a href="#">Puzzle</a>
-                </li>
-                <li>
-                  <a href="#">Mobile</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">About
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search"></div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </div>
-          </form>
-        </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="games_dropdown">Games
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="../templates/Action.html">Action</a></li>
+              <li><a href="../templates/Adventure.html">Adventure</a></li>
+              <li><a href="../templates/Puzzle.html">Puzzle</a></li>
+              <li><a href="../templates/Shooter.html">Shooter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../templates/About.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="../templates/Contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search"></div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
+      </div>
         
         <!-- /.navbar-collapse -->
-      </div>
+    
     </nav>
     <!-- End of navigation bar -->
     <div class="container-fluid">
       <div class="col-sm-12">
         <div class="col-sm-9">
-            <h1>Adventure</h1>
+            <h1>Action</h1>
             <div class="col-sm-6">
-              <img class="img-responsive" id = "boom" src="../Images/twoswords.png" />
+              <img class="img-responsive" id = "boom" src="../static/Images/boom.png" />
             </div>
-            <p class="col-sm-9">If youre looking for an adventure to indulge in, you have come to the right place!</p>
+            <p class="col-sm-9">If youre looking for intense action packed games, you have come to the right place!</p>
           
           <div class="col-sm-12">
               <div class="col-sm-4">
-                <img class="img-responsive" src="../Images/minecartmadnessv2.jpg" />
+                <img class="img-responsive" src="../static/Images/Agar.io.jpg" />
               </div>
               <div class="col-sm-8">
-                <p>Play Minecart Madness, how far can you get in this mad minecart game?
+                <p>Play the popular game Agar.io, where you eat cells smaller than you and don't get eaten by the bigger ones!
                   <br/>
-                  <a href="../HTML_Files/MinecartMadness.html">
+                  <a href="../templates/Agar.io.html">
                     <u>Play Now</u>
                   </a>
                 </p>
@@ -101,12 +90,12 @@
             </div>
           <div class="col-sm-12">
               <div class="col-sm-4">
-                <img class="img-responsive" src = "../Images/mimelet.jpg" />
+                <img class="img-responsive" src = "../static/Images/CalabashBros.jpg" />
               </div>
               <div class="col-sm-8">
-                  <p>Play Mimelet, control Mimlet to steal powers to overcome obstacles.
+                  <p>Play Calabash Bros, where you help the brothers defeat hordes of monsters!
                   <br/>
-                  <a href =  "../HTML_Files/Mimelet.html">
+                  <a href = "../templates/CalabashBros.html">
                     <u>Play Now</u>
                   </a>
                  </p>
@@ -114,35 +103,35 @@
               </div>
               <div class = "col-sm-12">
                 <div class = "col-sm-4">
-                  <img  class = "image-responsive" src= "../Images/EgyptianTalenew.jpg"/>
+                  <img  class = "image-responsive" src= "../static/Images/SwingCopters.jpg"/>
                     </div>
                     <div class = "col-sm-8">
-                      <p>Play Egyptian Tale, Help the Egyptian princess take the throne and get her revenge.
+                      <p>Play Swing Copter, Flying with a propeller hat is not as easy as it looks!
                       <br/>
-                      <a href= "">
+                      <a href= "../templates/SwingCopters.html">
                         <u>Play Now</u>
                         </a>
                     </p></div>
                    </div>
             <div class = "col-sm-12">
               <div class = "col-sm-4">
-                <img  class = "image-responsive" src = "../Images/AcidFactorynew.jpg"/>
+                <img src = "../static/Images/totalwreckage.jpg"/>
                 </div>
                 <div class = "col-sm-8">
-                  <p>Play Acid Factory, Help Harry escape the horrors of his acid-flooded factory.
+                  <p>Play Total Wreckage, the game where you crash your way through a demolition derby!
                   <br>
-                  <a href = ""><u>Play Now</u></a>
+                  <a href = "../templates/TotalWreckage.html"><u>Play Now</u></a>
                   </p>
                 </div>
                 </div>
               <div class = "col-sm-12">
                 <div class = "col-sm-4">
-                  <img  class = "image-responsive" class = "image_icons" src = "../Images/zombality.jpg"/>
+                  <img src = "../static/Images/skywardninja.jpg"/>
                 </div>
                 <div class = "col-sm-8">
-                  <p>Play Zombality, Survive this crazy house full of evil, dangerous and clever zombies. Escape the damned house of Zombality!
+                  <p>Play Skyward Ninja, A platform game where you have to use your ninja skills to get the top!
                   <br>
-                  <a href = ""><u>Play Now</u></a>
+                  <a href = "../templates/SkywardNinja.html"><u>Play Now</u></a>
                   </p>
                 </div>
               </div>
@@ -151,9 +140,7 @@
               
             </div>
                 
-              
-              
-              
+ 
             <u>Top 10</u>
             <ol>
               <li><a href = "../HTML_Files/8BallPool.html">8 Ball Pool</a></li>
