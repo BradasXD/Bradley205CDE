@@ -18,42 +18,48 @@
     <body>
     <!-- Start of navigation bar -->
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-      </button>
-      <div id = "logo"><a class="navbar-brand" href="../templates/Homepage.html"><img id = "logo" src="../static/Images/igloologo.png"></img></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id = "games_dropdown">Games<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="../templates/Action.html">Action</a></li>
-            <li><a href="../templates/Adventure.html">Adventure</a></li>
-            <li><a href="../templates/Puzzle.html">Puzzle</a></li>
-            <li><a href="../templates/Shooter.html">Shooter</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Contact</a></li>
-        
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="logo">
+            <a class="navbar-brand" href="#">
+            <a href = "{{url_for('index')}}"><img id="logo" src="../static/Images/igloologo.png"></a>
+          </div>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div><!-- /.navbar-collapse -->
-  </div>
-</nav>
+      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="games_dropdown">Games
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="{{url_for('Action')}}">Action</a></li>
+              <li><a href="{{url_for('Adventure')}}">Adventure</a></li>
+              <li><a href="{{url_for('Puzzle')}}">Puzzle</a></li>
+              <li><a href="{{url_for('Shooter')}}">Shooter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="{{url_for('About')}}">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{url_for('Contact')}}">Contact</a>
+          </li>
+        </ul>
+      </div>
+        <!-- /.navbar-collapse -->
+    
+    </nav>
     <!--End of navigation bar-->
       
   <div class = "col-sm-12">

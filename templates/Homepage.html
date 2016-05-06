@@ -13,9 +13,10 @@
         <script type="text/javascript" src="JS_Files/slideshow.js"></script>
         <script src="//static.miniclipcdn.com/js/game-embed.js"></script>
         <link rel="stylesheet" href="../static/CSS_Files/styleSheet.css" type="text/css"/>
+        <script type="text/javascript" src="../static/JS_Files/Clock.js"></script>
         </head>
     
-    <body>
+    <body onload = "Clock()">
     <!-- Start of navigation bar -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -36,6 +37,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id = "games_dropdown">Games<span class="caret"></span></a>
            <ul class="dropdown-menu">
+                <!-- Links to the dropdown menu -->
                 <li>
                   <a href="{{url_for('Action')}}">Action</a>
                 </li>
@@ -65,11 +67,12 @@
     <!-- End of navigation bar -->
     <div class="container-fluid">
       <div class="col-sm-12">
+        <div class = col-sm-4 id = "clock"></div>
         <div class="col-sm-9">
           <h1>Welcome to Igloo..</h1>
           <p>This is a website designed for users to enjoy flash games in a simple, easy and responsive website.</p>
           <div class="col-sm-6">
-            <h1 class = "pageTitle">Action</h1>
+            <a href = "{{url_for('Action')}}"><h1 class = "pageTitle" >Action</h1></a>
             <p class="col-sm-9">Play Action games</p>
             <div class="col-sm-3">
               <img class="img-responsive" src="../static/Images/boom.png" />
@@ -103,7 +106,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <h1 class = "pageTitle">Adventure</h1>
+            <a href = "{{url_for('Adventure')}}"><h1 class = "pageTitle" >Adventure</h1></a>
             <p class="col-sm-9">Play adventure games</p>
             <div class="col-sm-3">
               <img class="img-responsive" src="../static/Images/twoswords.png" />
@@ -136,7 +139,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <h1 class = "pageTitle">Puzzle</h1>
+            <a href = "{{url_for('Puzzle')}}"><h1 class = "pageTitle" >Puzzle</h1></a>
             <p class="col-sm-9">Play Puzzle games</p>
             <div class="col-sm-3">
               <img class="img-responsive" src="../static/Images/puzzle.png" />
@@ -167,7 +170,7 @@
             </div>
           </div>
          <div class="col-sm-6">
-            <h1 class = "pageTitle">Shooter</h1>
+            <a href = "{{url_for('Shooter')}}"><h1 class = "pageTitle">Shooter</h1></a>
             <p class="col-sm-9">Play Shooter games</p>
             <div class="col-sm-3">
               <img src="../static/Images/gun.png" class="img-responsive" />

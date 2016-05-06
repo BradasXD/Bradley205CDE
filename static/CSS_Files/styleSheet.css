@@ -174,7 +174,14 @@ p.opening {
 
 .pageTitle:hover {
     color:white;
+}
+#clock {
     
+    width:100px;
+    height:10px;
+    font-family: Calibri;
+    font-size:20px;
+
 }
 
 #slideShow {
@@ -250,42 +257,6 @@ p.opening {
 	border:#30aed6 solid 3px;
 }
 
-/* Icons ---------------------------------- */
-#name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#name:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 8px 5px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
 
 textarea {
     width: 100%;
@@ -294,11 +265,8 @@ textarea {
     resize:vertical;
 }
 
-
-
-
-#button-blue{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+#button{
+	font-family: Calibri;
 	float:left;
 	width: 100%;
 	border: #CCCCCC solid 4px;
@@ -311,8 +279,8 @@ textarea {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+    margin-top:-4px;
+    font-weight:700;
 }
 
 	

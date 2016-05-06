@@ -8,7 +8,7 @@ def index():
     
 @app.route('/8BallPool')
 def eightball():
-    return render_template("8BallPoo.html")
+    return render_template("8BallPool.html")
     
 @app.route('/About')
 def About():
@@ -37,6 +37,10 @@ def Boxo():
 @app.route('/CalabashBros')
 def CalabashBros():
     return render_template("CalabashBros.html")
+    
+@app.route('/CandynClyde')
+def CandynClyde():
+    return render_template("CandynClyde.html")    
     
 @app.route('/Commando')
 def Commando():

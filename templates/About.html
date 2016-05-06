@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Start of navigation bar -->
-    <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -27,44 +27,35 @@
           </button>
           <div id="logo">
             <a class="navbar-brand" href="#">
-              <a href = "../templates/Homepage.html"><img id="logo" src="../static/Images/igloologo.png"></a>
-          </div>
+            <a href = "{{url_for('index')}}"><img id="logo" src="../static/Images/igloologo.png"></a>
           </div>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="games_dropdown">Games
-                <span class="caret"></span>
-              </a>
-              <li>
-                  <a href="{{url_for('Action')}}">Action</a>
-                </li>
-                <li>
-                  <a href="{{url_for('Adventure')}}">Adventure</a>
-                </li>
-                <li>
-                  <a href="{{url_for('Puzzle')}}">Puzzle</a>
-                </li>
-                <li>
-                  <a href= "{{url_for('Shooter')}}">Shooter</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="{{url_for('About')}}">About
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li>
-              <a href="{{url_for('Contact')}}">Contact</a>
-            </li>
-    
-          
-        </div>
-        <!-- /.navbar-collapse -->
       </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="games_dropdown">Games
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="{{url_for('Action')}}">Action</a></li>
+              <li><a href="{{url_for('Adventure')}}">Adventure</a></li>
+              <li><a href="{{url_for('Puzzle')}}">Puzzle</a></li>
+              <li><a href="{{url_for('Shooter')}}">Shooter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="{{url_for('About')}}">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{url_for('Contact')}}">Contact</a>
+          </li>
+        </ul>
+      </div>
+        <!-- /.navbar-collapse -->
     </nav>
     <!-- End of navigation bar -->
     <div class="container-fluid">
@@ -75,10 +66,10 @@
           <div id = "slideShow">
           <div class="col-sm-6">
           Click on one one if the images to go to their designated games
-          <a href = "../templates/Boxo.html"><img class="mySlides" src="../static/Images/boxo.jpg"></a>
-          <a href = "../templates/Agar.io.html"><img class="mySlides" src="../static/Images/Agar.io.jpg">
-          <a href = "../templates/Mimelet.html"> <img class="mySlides" src="../static/Images/mimelet.jpg"></a>
-          <a href = "../HTML/SwingCopter.html"><img class="mySlides" src="../static/Images/SwingCopters.jpg"></a>
+          <a href = "{{url_for('Boxo')}}"><img class="mySlides" src="../static/Images/boxo.jpg"></a>
+          <a href = "{{url_for('Agar_io')}}"><img class="mySlides" src="../static/Images/Agar.io.jpg">
+          <a href = "{{url_for('Mimelet')}}"> <img class="mySlides" src="../static/Images/mimelet.jpg"></a>
+          <a href = "{{url_for('SwingCopter')}}"><img class="mySlides" src="../static/Images/SwingCopters.jpg"></a>
           <a class="slideShowButtons" onclick="plusDivs(-1)">&#10094;</a>
           <a class="slideShowButtons"onclick="plusDivs(+1)">&#10095;</a> 
            </div> 
@@ -104,7 +95,7 @@
           }
         x[sliderNumber-1].style.display = "block";  
         }
-</script>
+      </script>
   <div class = "container-fluid"></div>
   </body>
   
