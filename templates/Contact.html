@@ -90,7 +90,7 @@
   {% endblock %}
 
   {% block content %}
-  
+  <!-- beginning of my forms -->
   <div class="fluid-container">  
     <div id="form-main" class = "col-sm-12">
       <div class = "col-sm-3">
@@ -102,32 +102,33 @@
         <div class = "col-sm-6">  
           <div id="form-div" >
             <form class="form" id="form1" method = "post" action = "">
-              
+              <!--lets user inputs a unique username -->
               <p class = "name">
-                <input type="text" name="Username" class= "feedback-input" placeholder = "User Name" id = "name"/>
+                <input type="text" name="Username" class= "input" placeholder = "User Name" id = "name"/>
               </p>
+              <!-- lets user input a first name -->
               <p class="name">
-                <input name="Firstname" type="text" class="feedback-input" placeholder=" First Name" id="name" />
+                <input name="Firstname" type="text" class="input" placeholder=" First Name" id="name" />
               </p>
-              
+              <!-- lets user input a second name -->
               <p class = "name">
-                <input name = "Secondname" type = "text" class = "feedback-input" placeholder = "Second Name" id = "name" />
+                <input name = "Secondname" type = "text" class = "input" placeholder = "Second Name" id = "name" />
               </p>  
-              
+              <!-- lets user input an email -->
               <p class="email">
-                <input name="email" type="text" class=" feedback-input" id="email" placeholder="Email" />
+                <input name="email" type="text" class=" input" id="email" placeholder="Email" />
               </p>
-      
+              <!-- lets users input a comment -->
               <p class="text">
-                <textarea name="comment" class="feedback-input" id="comment" placeholder="Comment"></textarea>
+                <textarea name="comment" class="input" id="comment" placeholder="Comment"></textarea>
               </p>
       
-          {{% if name %}}
-            <p> Your name is: {{ name }}</p>
-            <p>and your comments are: {{ comment }}</p>
-            <p>Thank you for your inpur</p>
+          {% if name %}
+            <p> You have provided your name,: {{ name }}</p>
+            <p>The comments which you have made are: {{ comment }}</p>
+            <p>Thank you for your input</p>
           {% endif %}
-      
+      <!-- submit button -->
       <div class="submit">
         <input type="submit" value="SEND" id="button"/>
         <div class="ease"></div>

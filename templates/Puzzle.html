@@ -65,7 +65,7 @@
         <div class="col-sm-9">
             <h1>Puzzle</h1>
             <div class="col-sm-6">
-              <img class="img-responsive" id = "boom" src="../static/Images/twoswords.png" />
+              <img class="img-responsive" id = "boom" src="../static/Images/puzzle.png" />
             </div>
             <p class="col-sm-9">If you fancy warming up your brain, then play a Puzzle game!</p>
           
@@ -136,12 +136,14 @@
               
               
               
-            <u>Top 10</u>
+           <div class = "col-sm-4">
+            <u>Top 5</u>
             <ol>
-              <li><a href = "../HTML_Files/8BallPool.html">8 Ball Pool</a></li>
-              <li>Cut the Rope</li>
-              <li><a href = "../HTML_Files/Agar.io.html">Agar.io</a></li>
-              <li>On the run</li>
+              <li><a href = "{{url_for('8BallPool')}}">8 Ball Pool</a></li>
+              <li><a href ="{{url_for('Agar_io')}}">Agar.io</a></li>
+              <li><a href = "{{url_for('Boxo')}}">Boxo</a></li>
+              <li><a href ="{{url_for('Mimelet')}}" >Mimelet</a></li>
+              <li><a href = "{{url_for('Commando')}}">Commando</a></li>
             </ol>
           </div>
         

@@ -13,10 +13,9 @@
         <script type="text/javascript" src="JS_Files/slideshow.js"></script>
         <script src="//static.miniclipcdn.com/js/game-embed.js"></script>
         <link rel="stylesheet" href="../static/CSS_Files/styleSheet.css" type="text/css"/>
-        <script type="text/javascript" src="../static/JS_Files/Clock.js"></script>
         </head>
     
-    <body onload = "Clock()">
+    <body>
     <!-- Start of navigation bar -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -79,7 +78,7 @@
             </div>
             <div class="col-sm-12">
               <div class="col-sm-4">
-                <img class="img-responsive" src="../static/Images/Agar.io.jpg" />
+                <img class="img-responsive"/></s>rc="../static/Images/Agar.io.jpg" />
               </div>
               <div class="col-sm-8">
                 <p>Play the popular game Agar.io, where you eat cells smaller than you and don't get eaten by the bigger ones!
@@ -209,17 +208,16 @@
             </div>
           </div>
       
-        <div class="col-sm-3">
-          <div>
-            <u>Top 10</u>
+        <div class = "col-sm-4">
+            <u>Top 5</u>
             <ol>
-              <li><a href = "../templates/8BallPool.html">8 Ball Pool</a></li>
-              <li>Cut the Rope</li>
-              <li><a href = "../template/Agar.io.html">Agar.io</a></li>
-              <li>On the run</li>
+              <li><a href = "{{url_for('8BallPool')}}">8 Ball Pool</a></li>
+              <li><a href ="{{url_for('Agar_io')}}">Agar.io</a></li>
+              <li><a href = "{{url_for('Boxo')}}">Boxo</a></li>
+              <li><a href ="{{url_for('Mimelet')}}" >Mimelet</a></li>
+              <li><a href = "{{url_for('Commando')}}">Commando</a></li>
             </ol>
           </div>
-        </div> 
       </div>
     </div>
   </body>
